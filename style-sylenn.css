@@ -7,6 +7,9 @@ body
   background-color:#0d101c;
   font-family: 'Open Sans', sans-serif;
   color: white;
+  font-size:14px;
+  padding:0px;
+  margin: 0px;
 }
 
 .image-header 
@@ -60,15 +63,59 @@ body
 .psycho
 {
   padding-top: 100px;
-  width:1000px;
+  width:100%;
   margin: auto;
+  background-image:url(blood-swirl.png);
+  background-repeat: no-repeat;
+  background-position: center;
   
 }
 
 .text-psycho
 {
+  width: 620px;
+  margin:auto;
+  background-color:#0d101c;
+  padding: 60px;
+}
+
+.histoire
+{
+  padding-top: 100px;
+  width:100%;
+  margin: auto;
+  
+}
+
+.text-histoire
+{
   width: 500px;
   margin:auto;
+  background-color:#0d101c;
+}
+
+.resume
+{
+  padding-top: 100px;
+  width:100%;
+  margin: auto;
+  
+}
+
+.text-resume
+{
+  width: 1000px;
+  margin:auto;
+  background-color:#0d101c;
+
+}
+
+.comp
+{
+  padding-top: 100px;
+  width:100%;
+  margin: auto;
+  
 }
 
 .relations
@@ -136,3 +183,36 @@ tr
   text-align: center;
   margin-bottom:20px;
 }
+
+.note a, .resume a
+{
+  color:skyblue;
+}
+
+.text-resume .soustitre
+{
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.bloc-resume
+{
+  width: 550px;
+  display: inline-block;
+}
+
+table.tableau-resume 
+{
+  margin:auto;
+  width: 1000px;
+  margin-left: -20px;
+}
+
+.tableau-resume td
+{
+  padding:10px;
+  padding-bottom: 20px;
+  vertical-align: top;
+}
+
