@@ -1,0 +1,139 @@
+@import "compass/css3";
+/* entypo */
+li img {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right:5px;
+  text-align: center;
+  font-family: 'entypo', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+.side-panel {
+  position: fixed;
+  padding-top: 20%;
+}
+
+.side-panel ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.side-panel > ul > li:first-child {
+  border-top-right-radius: 3px;
+}
+.side-panel > ul > li:first-child a {
+  padding-top: 13px;
+}
+.side-panel > ul > li:last-child {
+  border-bottom-right-radius: 3px;
+}
+.side-panel > ul > li:last-child a {
+  padding-bottom: 13px;
+}
+.side-panel > ul ul {
+  width: 150px;
+  padding-left: 10px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+.side-panel > ul ul li:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-right-color: black;
+}
+.side-panel > ul ul li:first-child:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #efefef;
+  border-right-color: inherit;
+}
+.side-panel > ul ul li:first-child:hover {
+  border-right-color: #fff;
+}
+.side-panel > ul ul li:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.side-panel li {
+  position: relative;
+  background: black;
+}
+.side-panel li:hover {
+  background: black;
+}
+.side-panel li:hover > ul {
+  display: block;
+}
+.side-panel a {
+  display: inline-block;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+.a > ul {
+  width: 150px;
+  transform: translateX(-110px);
+}
+.a img {
+  display: inline-block;
+  position: relative;
+  left: 100px;
+}
+.a .menu-item {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: block;
+  padding: 8px 13px;
+  color: #efefef;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  transform: translate(-100%, -50%) translateZ(0);
+  background: black;
+  border-radius: 3px;
+  border-right-color: black;
+  transition: all 0.3s ease-in-out;
+  z-index: -2;
+}
+.a .menu-item:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #efefef;
+  border-right-color: inherit;
+}
+.a li:hover .menu-item {
+  transform: translate(10px, -50%);
+}
+.a > ul ul {
+  display: block;
+  opacity: 0;
+  transform: translate(-100%);
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.a li:hover ul {
+  opacity: 1;
+  transform: translate(0);
+}
