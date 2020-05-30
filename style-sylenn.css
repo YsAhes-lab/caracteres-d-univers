@@ -47,6 +47,7 @@ body
 {
   padding-top: 100px;
   width:1200px;
+  min-height: 800px;
   background-image:url(sylenn-yeux-noirs.png);
   background-repeat:no-repeat;
   background-position: right;
@@ -216,3 +217,18 @@ table.tableau-resume
   vertical-align: top;
 }
 
+table img
+{
+  width: auto;
+  height: 30px;
+  color: white;
+  display: block;
+  margin-right: 10px;
+  float: left;
+}
+
+.encours td
+{
+  padding-left: 20px;
+  padding-right: 20px;
+}
