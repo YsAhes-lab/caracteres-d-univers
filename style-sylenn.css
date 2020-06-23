@@ -13,9 +13,7 @@ body
 }
 
 .image-header 
-{
-  background-image: url(fond-etoile.png);
-    width: 1260px;
+{    width: 100%;
     height: 779px;
   color:white;
   margin:auto;
@@ -23,7 +21,12 @@ body
 
 .image-header img
 {
+  width: 1051px;
   margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+  
 }
 
 .encours
